@@ -4,6 +4,6 @@ from django.contrib.auth import views as auth_views
 from django.http import HttpResponse
 
 urlpatterns = [
-    path('', auth_views.LoginView.as_view(template_name='accounts/login.html'), name='login'), 
+    # path('', auth_views.LoginView.as_view(template_name='accounts/login.html'), name='login'), 
     path('login/', auth_views.LoginView.as_view(template_name='accounts/login.html'), name='login'),
 ]
